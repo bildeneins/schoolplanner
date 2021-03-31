@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.acme</groupId>
-  <artifactId>optaplanner-quarkus-school-timetabling-quickstart</artifactId>
+  <artifactId>school-planner</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
