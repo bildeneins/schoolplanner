@@ -1,7 +1,7 @@
 # APIs
 
 ## timeTable
-### get /timeTable
+### GET /timeTable
 returns all data  
 example
 ```json
@@ -79,14 +79,14 @@ example
 }
 ```
 
-### post /timeTable/solve
+### POST /timeTable/solve
 solve problem  
 
-### post /timeTable/stopSolving
+### POST /timeTable/stopSolving
 stop solving problem
 
 ## Lessons
-### post /lessons
+### POST /lessons
 add lesson  
 request body:  
 ```json
@@ -96,12 +96,12 @@ request body:
     "studentGroup": String
 }
 ```
-### post /lessons/<id>
+### DELETE /lessons/<id>
 delete lesson  
 id: lesson.id  
 
 ## Timeslots
-### post /timeslots  
+### POST /timeslots  
 add timeslots  
 request body:  
 ```json
@@ -112,12 +112,12 @@ request body:
 }
 ```
 
-### post /timeslots/<id>
+### DELETE /timeslots/<id>
 delete timeslot  
 id: timeslot.id  
 
 ## Rooms
-### post /rooms
+### POST /rooms
 add room  
 request body: 
 ```json
@@ -126,6 +126,48 @@ request body:
 }
 ```
 
-### post /rooms/<id>
+### DELETE /rooms/<id>
 delete room  
-id: room.id  
+id: room.id 
+
+## Subjects
+### POST /subjects
+add subject  
+request body:  
+```json
+{
+    "name": String
+}
+```
+
+### DELETE /subjects/<id>
+delete subject  
+id: subject.id  
+
+## Teachers
+### POST /teachers
+add teacher  
+request body:
+```json
+{
+    "name": String
+}
+```
+
+### DELETE /teachers/<id>
+delete teacher  
+id: teacher.id  
+
+## StudentGroups
+### POST /studentGroups
+add student group  
+request body:
+```json
+{
+    "name": String
+}
+```
+
+### DELETE /studentGroups/<id>
+delete student group  
+id: studentGroup.id  
